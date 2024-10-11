@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  width: 100%;
+}
+html, body {
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.header {
+  width: 100%;
+  height: 700px; 
+  /* color: white; */
+  /* opacity: 7; */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+  
+  object-fit: cover;
+  border-bottom: 8px solid rgb(74, 72, 72);
+}
+.header nav img{
+    width: 170px;
+   cursor: pointer;
+ 
+}
+nav{
+    
+     height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    filter: brightness(83%);
+    
+
+}
+.english-btn, .Sign-in-btn{
+  cursor: pointer;
+  height: 33px;
+  width: 80px;
+  border-radius: 4px; 
+  padding: 1px;
+}
+.english-btn{
+  background: transparent;
+color: white;
+border: .2px solid white;
+margin-right: 10px;
+width: 115px;
+
+
+}
+.english-btn ,i {
+  margin-right: 6px;
+}
+.Sign-in-btn{
+  background-color: red;
+  color: white;
+}
+
+.header-content{
+  
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  
+
+}
+
+.header-content ,h3{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+margin-top: 100px;
+}
+.header-content h4 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 25px;
+  
+  
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: 100;
+  
+  
+}
+ .form input{
+  
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+
+}
+/* .form input::placeholder{
+  margin-left: 10px;
+} */
+.form button{
+    
+  height: 50px;
+  width: 200px;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 4px;
+  
+}
+/* -------------------feactures --------------- */
+
+.features-container{
+
+  border-bottom: 8px solid rgb(74, 72, 72);
+}
+.row{
+  display: flex;
+  align-items: center;
+   justify-content: space-around;
+   margin-bottom: 100px;
+margin-top: 50px;
+}
+
+.first-col{
+  margin: 0px 112px;
+}
+
+
+.first-col h1{
+  font-size: 50px;
+  font-weight:900;
+  margin-bottom: 20px;
+ 
+  
+}
+.first-col p {
+  font-size: 20px;
+  line-height: 30px;
+
+  
+}
+.second-col{
+  margin: 0px 100px;
+  position: relative;
+
+}
+.second-col video{
+  height: 52%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 73%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.second-col3{
+  margin: 0px 100px;
+  position: relative;
+
+}
+.second-col3 video{
+  height: 47%;
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 73%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* question  */
+
+.question{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.question  h1{
+  font-size: 55px;
+  margin-top: 75px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.accordion{
+  
+  width: 80rem;
+
+  
+} 
+
+ .accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+
+} 
+.accordion li label {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 3px;
+  cursor:  pointer;
+  position: relative;
+}
+
+ label::after{
+  content: '+';
+  font-size: 40px;
+  position: absolute;
+  
+  right: 30px;
+  transition: transform 0.5s;
+}  
+
+input[type="radio"]{
+  display: none;
+
+} 
+.accordion .content{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+} 
+ .accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 25px 30px;
+} 
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+
+}
+
+.ready{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.ready h6{
+  font-size: 20px;
+  display:inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.button2{
+  height: 55px;
+    width: 420px;
+    background: transparent;
+    border-radius: 6px;
+
+}
+
+.button button{
+  height: 55px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+footer{
+border-top:8px solid #303030;
+margin-top: 50px;
+}
+.footer{
+  
+
+  display: flex;
+  justify-content:space-evenly ;
+  color: white;
+}
+.call{
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.call a{
+  color: rgb(215, 194, 194);
+  position: relative;
+  left: 159px;
+  
+}
+.footer a{
+  color: rgb(215, 194, 194);
+  line-height:45px ;
+}
+
+
+footer li{
+list-style: none;
+}
+.english-btn-2{
+  background: transparent;
+  color: white;
+  border: .2px solid white;
+  margin-right: 10px;
+  width: 115px;
+}
+.footer-last{
+  position: relative;
+  left: 198px;
+  line-height: 46px;
+} 
